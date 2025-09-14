@@ -1,9 +1,10 @@
 ## Gratheon/beepose2
 
-A fork of DeepLabCut with bee pose model
+Gratheon bee pose resnet50 model.
+
+Trained using https://github.com/DeepLabCut/DeepLabCut
 
 https://github.com/user-attachments/assets/e8b0958a-8d1e-4a3e-a843-34505a558832
-
 
 
 
@@ -50,3 +51,17 @@ Model performance:
 ```
 ## Performance
 3 FPS on Mac M3
+
+```
+Video metadata: 
+  Overall # of frames:    451
+  Duration of video [s]:  30.03
+  fps:                    15.02
+  resolution:             w=1280, h=720
+
+Running pose prediction with batch size 8
+100%|█████████████████████████████████████████████████| 451/451 [02:06<00:00,  3.56it/s]
+Processing...  /Users/artjom/git/models-beepose2/test.mp4
+Loading From /Users/artjom/git/models-beepose2/testDLC_Resnet50_GratheonBeePoseSep13shuffle1_snapshot_best-170.h5
+100%|████████████████████████████████████████████████| 
+```
