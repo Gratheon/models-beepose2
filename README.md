@@ -2,11 +2,8 @@
 
 A fork of DeepLabCut with bee pose model
 
-<img width="1015" height="628" alt="Screenshot 2025-09-14 at 17 48 12" src="https://github.com/user-attachments/assets/80e59fc1-3074-4b7f-b98a-f781ecade5ae" />
+https://github.com/user-attachments/assets/e8b0958a-8d1e-4a3e-a843-34505a558832
 
-
-
-https://github.com/user-attachments/assets/ba1468bf-dad0-4e6d-b54e-55062d528cf5
 
 
 
