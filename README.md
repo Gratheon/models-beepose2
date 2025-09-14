@@ -14,3 +14,5 @@ Developers Stable Release: very quick start (Python 3.10+ required) to install
 ```bash
 pip install --pre  "deeplabcut[gui]"
 ```
+
+Edit `config.yaml` and set new project path
