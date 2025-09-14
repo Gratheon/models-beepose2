@@ -1,0 +1,163 @@
+# Project definitions (do not edit)
+Task: GratheonBeePose
+scorer: tot_ra
+date: Sep13
+multianimalproject: true
+identity: true
+
+
+# Project path (change when moving around)
+project_path: 
+  /Users/artjom/git/models-beepose2/GratheonBeePose-tot_ra-2025-09-13
+
+
+# Default DeepLabCut engine to use for shuffle creation (either pytorch or tensorflow)
+engine: pytorch
+
+
+# Annotation data set configuration (and individual video cropping parameters)
+video_sets:
+  /Users/artjom/git/entrance-observer-pose-deeplabcut/videos/1757487536.mp4:
+    crop: 0, 1280, 0, 720
+  /Users/artjom/git/entrance-observer-pose-deeplabcut/videos/1757494210.mp4:
+    crop: 0, 1280, 0, 720
+  /Users/artjom/git/entrance-observer-pose-deeplabcut/videos/1757493609.mp4:
+    crop: 0, 1280, 0, 720
+  /Users/artjom/git/entrance-observer-pose-deeplabcut/videos/1757494930.mp4:
+    crop: 0, 1280, 0, 720
+  /Users/artjom/git/entrance-observer-pose-deeplabcut/videos/1757488713.mp4:
+    crop: 0, 1280, 0, 720
+  /Users/artjom/git/entrance-observer-pose-deeplabcut/videos/1757493519.mp4:
+    crop: 0, 1280, 0, 720
+  /Users/artjom/git/entrance-observer-pose-deeplabcut/videos/1757497423.mp4:
+    crop: 0, 1280, 0, 720
+  /Users/artjom/git/entrance-observer-pose-deeplabcut/videos/1757497213.mp4:
+    crop: 0, 1280, 0, 720
+  /Users/artjom/git/entrance-observer-pose-deeplabcut/videos/1757487476.mp4:
+    crop: 0, 1280, 0, 720
+individuals:
+- individual1
+- individual2
+- individual3
+- individual4
+- individual5
+- individual6
+- individual7
+- individual8
+- individual9
+- individual10
+- individual11
+- individual12
+- individual13
+- individual14
+- individual15
+- individual16
+- individual17
+- individual18
+- individual19
+- individual20
+- individual21
+- individual22
+- individual23
+- individual24
+- individual25
+- individual26
+- individual27
+- individual28
+- individual29
+- individual30
+- individual31
+- individual32
+- individual33
+- individual34
+- individual35
+- individual36
+- individual37
+- individual38
+- individual39
+- individual40
+- individual41
+- individual42
+- individual43
+- individual44
+- individual45
+- individual46
+- individual47
+- individual48
+- individual49
+- individual50
+uniquebodyparts: []
+multianimalbodyparts:
+- head
+- thorax
+- abdomen
+- antenna-left
+- antenna-right
+- fore-leg-left
+- fore-leg-right
+- mid-leg-left
+- mid-leg-right
+- hind-leg-left
+- hind-leg-right
+- wing-left
+- wing-right
+bodyparts: MULTI!
+
+
+# Fraction of video to start/stop when extracting frames for labeling/refinement
+start: 0
+stop: 1
+numframes2pick: 20
+
+
+# Plotting configuration
+skeleton: [['head', 'thorax'],
+           ['head', 'antenna-left'],
+           ['head', 'antenna-right'],
+           ['thorax', 'abdomen'],
+           ['thorax', 'fore-leg-left'],
+           ['thorax', 'fore-leg-right'],
+           ['thorax', 'mid-leg-left'],
+           ['thorax', 'mid-leg-right'],
+           ['thorax', 'hind-leg-left'],
+           ['thorax', 'hind-leg-right'],
+           ['thorax', 'wing-left'],
+           ['thorax', 'wing-right']]
+skeleton_color: black
+pcutoff: 0.6
+dotsize: 4
+alphavalue: 0.7
+colormap: rainbow
+
+
+# Training,Evaluation and Analysis configuration
+TrainingFraction:
+- 0.95
+iteration: 0
+default_net_type: resnet_50
+default_augmenter: albumentations
+default_track_method: ellipse
+snapshotindex: -1
+detector_snapshotindex: -1
+batch_size: 8
+
+
+# Cropping Parameters (for analysis and outlier frame detection)
+cropping: false
+#if cropping is true for analysis, then set the values here:
+x1: 0
+x2: 640
+y1: 277
+y2: 624
+
+
+# Refinement configuration (parameters from annotation dataset configuration also relevant in this stage)
+corner2move2:
+- 50
+- 50
+move2corner: true
+
+
+# Conversion tables to fine-tune SuperAnimal weights
+SuperAnimalConversionTables:
+detector_batch_size: 1

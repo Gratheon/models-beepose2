@@ -166,7 +166,6 @@ class PartAffinityFieldPredictor(BasePredictor):
         pafs = pafs.reshape(batch_size, -1, 2, height, width)
 
         graph = [self.graph[ind] for ind in self.edges_to_keep]
-        n_id_channels = n_channels - self.num_multibodyparts
         preds = self.compute_peaks_and_costs(
             heatmaps,
             locrefs,
@@ -175,7 +174,7 @@ class PartAffinityFieldPredictor(BasePredictor):
             graph,
             self.edges_to_keep,
             scale_factors,
-            n_id_channels=n_id_channels,
+            n_id_channels=0,  # FIXME Handle identity training
         )
         poses = -torch.ones((batch_size, self.num_animals, self.num_multibodyparts, 5))
         poses_unique = -torch.ones((batch_size, 1, self.num_uniquebodyparts, 4))
