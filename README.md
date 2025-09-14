@@ -4,6 +4,12 @@ A fork of DeepLabCut with bee pose model
 
 <img width="1015" height="628" alt="Screenshot 2025-09-14 at 17 48 12" src="https://github.com/user-attachments/assets/80e59fc1-3074-4b7f-b98a-f781ecade5ae" />
 
+
+
+https://github.com/user-attachments/assets/ba1468bf-dad0-4e6d-b54e-55062d528cf5
+
+
+
 ## Quick start
 
 Developers Stable Release: very quick start (Python 3.10+ required) to install 
